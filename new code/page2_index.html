@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="page2_style.css">
+
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="content" style="display: none;">
+        <header>
+            <h1>Delicious Bites</h1>
+        </header>
+        
+        <div class="container">
+            <section class="menu" id="menu"></section>
+
+            <div class="cart">
+                <h2>Cart</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: ₹<span id="total-price">0</span></p>
+                <button id="order-btn">Place Order</button>
+            </div>
+        </div>
+
+        <div id="order-success" class="popup">
+            <p>Order Placed Successfully! 🎉</p>
+        </div>
+    </div>
+
+    <script src="page2_script.js"></script>
+</body>
+</html>

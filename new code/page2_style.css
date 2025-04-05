@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5ab;
+    color: #5c3d2e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    color: #333;
+}
+
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 8px solid #f3e5ab;
+    border-top: 8px solid #8b5a2b;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+header {
+    background-color: #8b5a2b;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    max-height: 80vh;
+    width: 70%;
+}
+
+.menu-item {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #8b5a2b;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5c3d2e;
+}
+
+.cart {
+    background: white;
+    padding: 15px;
+    width: 25%;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
